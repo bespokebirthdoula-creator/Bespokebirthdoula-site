@@ -1,1 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bespoke Birth Doula | Pleasanton & Tri-Valley</title>
+  <meta name="description" content="Personalized, evidence-based doula support for pregnancy, birth, and postpartum. Serving Pleasanton, Livermore, Dublin, San Ramon, Walnut Creek, Oakland, and nearby." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤍</text></svg>">
 
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Bespoke Birth Doula",
+    "url":"https://bespokebirthdoula.com",
+    "description":"Doula support for pregnancy, birth, and postpartum in Pleasanton & the Tri-Valley.",
+    "areaServed":"San Francisco Bay Area",
+    "priceRange":"$$",
+    "email":"hello@bespokebirthdoula.com",
+    "address": { "@type":"PostalAddress", "addressLocality":"Pleasanton", "addressRegion":"CA", "addressCountry":"US" }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Bespoke Birth Doula home">
+        <img src="assets/logo.png" alt="Bespoke Birth Doula logo" />
+        <span>Bespoke Birth Doula</span>
+      </a>
+      <nav class="menu" aria-label="Main navigation">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div class="grid two">
+        <div class="card">
+          <div class="eyebrow">Pleasanton & Tri-Valley</div>
+          <h1>Calm, confident support for pregnancy, birth, and postpartum.</h1>
+          <p class="lead">I’m <strong>Kristen</strong>, a doula who blends practical prep, advocacy, and a warm, steady presence—so you feel informed, heard, and in control.</p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">Book a free consult</a>
+            <a class="btn" href="services.html">View services</a>
+          </div>
+          <p class="note">Evidence-based • Partner-inclusive • Judgment-free</p>
+        </div>
+        <div class="photo-placeholder">Add a hero photo later (upload to <code>assets/hero.jpg</code> and reference it here).</div>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <h2 class="h">How I help</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Prenatal</h3>
+            <ul class="list">
+              <li>Birth preferences & advocacy</li>
+              <li>Comfort measures & positions</li>
+              <li>Hospital bag & practical planning</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Birth</h3>
+            <ul class="list">
+              <li>24/7 on-call near due date</li>
+              <li>Continuous support at home & hospital</li>
+              <li>Partner coaching, pain-coping tools</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Postpartum</h3>
+            <ul class="list">
+              <li>Early feeding support & referrals</li>
+              <li>Recovery tips & newborn basics</li>
+              <li>Emotional check-ins for your family</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="about-teaser">
+      <div class="wrap">
+        <h2 id="about-teaser" class="h">About Kristen</h2>
+        <p>Birth is not one-size-fits-all. I offer personalized guidance before labor, continuous support during birth, and gentle follow-up in early postpartum. My role is to help you and your partner feel prepared, confident, and respected—whatever path your birth takes.</p>
+        <p><a class="btn accent" href="about.html">More about me</a></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="service-area">
+      <div class="wrap">
+        <h2 id="service-area" class="h">Service area</h2>
+        <p class="note">Pleasanton, Livermore, Dublin, San Ramon, Walnut Creek, Oakland, and nearby.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <h2 id="contact-heading" class="h">Contact</h2>
+        <p class="sub">Have questions or want to book a free 20-minute consult? Reach out below.</p>
+
+        <!-- Replace YOUR_FORMSPREE_ID with your real Formspree endpoint (e.g., https://formspree.io/f/abcxyz) -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" id="contact-form">
+          <div class="grid" style="grid-template-columns:1fr 1fr">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="_replyto" type="email" required>
+            </div>
+          </div>
+          <div class="grid" style="grid-template-columns:1fr 1fr">
+            <div>
+              <label for="due">Due month (if pregnant)</label>
+              <input id="due" name="due_month" type="text" placeholder="e.g., March 2026">
+            </div>
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" placeholder="Pleasanton">
+            </div>
+          </div>
+          <div>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" rows="5" required placeholder="Tell me a bit about what you’re looking for."></textarea>
+          </div>
+
+          <!-- Honeypot -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="grid" style="grid-template-columns:1fr auto; align-items:center">
+            <span class="note">Or email me: <a href="mailto:hello@bespokebirthdoula.com">hello@bespokebirthdoula.com</a></span>
+            <button class="btn primary" type="submit">Send message</button>
+          </div>
+        </form>
+
+        <p class="note" style="margin-top:10px">By submitting, you consent to be contacted about doula services. No medical advice is provided; please consult your healthcare provider for clinical concerns.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Bespoke Birth Doula • Pleasanton, CA</div>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      const menu=document.querySelector('.menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contact-form')?.addEventListener('submit', function(e){
+      const email = this.querySelector('input[type="email"]').value || '';
+      if(!email.includes('@')) { e.preventDefault(); alert('Please enter a valid email.'); }
+    });
+  </script>
+</body>
+</html>
