@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Bespoke Birth Doula</title>
+  <meta name="description" content="About Kristen at Bespoke Birth Doula—evidence-based, partner-inclusive support in Pleasanton & the Tri-Valley." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤍</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Bespoke Birth Doula logo" />
+        <span>Bespoke Birth Doula</span>
+      </a>
+      <nav class="menu" aria-label="Main navigation">
+        <a href="about.html" aria-current="page">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a class="btn" href="index.html#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">Menu</button>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="card">
+          <h1>About Kristen</h1>
+          <p class="lead">I’m a doula focused on calm, confident births. I blend practical preparation, clear communication, and steady presence—so you feel informed and respected throughout your experience.</p>
+          <p class="note">Trauma-informed • Partner-inclusive • LGBTQ+ affirming • Evidence-based</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid two">
+          <div>
+            <h2 class="h">My approach</h2>
+            <p>Birth isn’t one script. I tailor support to your needs—whether that means detailed plans and research, lots of hands-on comfort measures, or simple reassurance and advocacy at key moments. I collaborate with your partner and care team to help you feel heard and in control.</p>
+            <h3>Training & settings supported</h3>
+            <ul class="list">
+              <li>Hospital, birth center, and home birth</li>
+              <li>Comfort-measure coaching for partners</li>
+              <li>Referrals to local lactation, pelvic floor, and mental health providers</li>
+            </ul>
+          </div>
+          <div class="photo-placeholder">Add a portrait here later (e.g., <code>assets/about.jpg</code>).</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p><a class="btn accent" href="services.html">See services</a> <a class="btn" href="index.html#contact">Book a consult</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Bespoke Birth Doula • Pleasanton, CA</div>
+  </footer>
+
+  <script>
+    function toggleMenu(){ const m=document.querySelector('.menu'); m.style.display=m.style.display==='block'?'none':'block'; }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
