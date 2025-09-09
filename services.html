@@ -1,1 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services | Bespoke Birth Doula</title>
+  <meta name="description" content="Packages for prenatal preparation, on-call birth support, and postpartum check-ins." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤍</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Bespoke Birth Doula logo" />
+        <span>Bespoke Birth Doula</span>
+      </a>
+      <nav class="menu">
+        <a href="about.html">About</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a class="btn" href="index.html#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">Menu</button>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="card">
+          <h1>Services & Packages</h1>
+          <p class="lead">Transparent offerings you can tailor to your needs. Sliding scale and HSA/FSA receipts available on request.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cards">
+          <div class="card">
+            <h3>Foundations Session</h3>
+            <ul class="list">
+              <li>Birth preferences & advocacy</li>
+              <li>Comfort measures & positions</li>
+              <li>Hospital bag & practical planning</li>
+            </ul>
+            <p class="note">Starting at $250</p>
+          </div>
+
+          <div class="card">
+            <h3>On-Call + Labor Support</h3>
+            <ul class="list">
+              <li>24/7 on-call near due date</li>
+              <li>Continuous support (home & hospital)</li>
+              <li>Partner coaching, pain-coping tools</li>
+            </ul>
+            <p class="note">Package from $1,800</p>
+          </div>
+
+          <div class="card">
+            <h3>Postpartum Check-in</h3>
+            <ul class="list">
+              <li>Recovery tips & newborn basics</li>
+              <li>Early feeding support & referrals</li>
+              <li>Emotional check-ins</li>
+            </ul>
+            <p class="note">$150 / visit</p>
+          </div>
+        </div>
+
+        <p style="margin-top:14px">
+          <a class="btn accent" href="index.html#contact">Request availability</a>
+          <a class="btn" href="faq.html">Read FAQs</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Bespoke Birth Doula • Pleasanton, CA</div>
+  </footer>
+
+  <script>
+    function toggleMenu(){ const m=document.querySelector('.menu'); m.style.display=m.style.display==='block'?'none':'block'; }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
